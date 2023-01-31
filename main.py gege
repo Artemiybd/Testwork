@@ -1,0 +1,16 @@
+from tkinter import *
+
+
+def button_1():
+    l.config(text=str(int(a.get()) /  3))
+
+
+root = Tk()
+root.title('Делить на 3')
+root.geometry("500x300")
+a = Entry(root, width=15, bg='grey', fg='cyan', font='consolas')
+a.pack()
+Button(root, text='Делить на 3', width=15, height=2, bg='white', command=button_1).pack()
+l = Label(root, width=15, bg='white', fg='cyan', font='consolas')
+l.pack()
+root.mainloop()
